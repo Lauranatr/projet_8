@@ -1,0 +1,27 @@
+.kasa-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0 50px 0;
+  max-width: 1240px;
+  width: 86%;
+  margin: auto;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  gap: 57px;
+}
+.navigation ul li {
+  list-style: none;
+}
+.navigation ul li a {
+  color: #FF6060;
+  text-decoration: none;
+  font-size: 24px;
+}
+.navigation ul li .nav-active {
+  border-bottom: 2px solid #ff6060;
+}/*# sourceMappingURL=header.css.map */
