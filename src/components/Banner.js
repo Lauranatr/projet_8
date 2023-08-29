@@ -10,7 +10,7 @@ const Banner = () => {
     return (
         <div className='homeBanner'>
             <img src={location.pathname === "/a-propos" ? aboutbanner : homebanner}
-        alt="banner" />
+            alt="banner" />
                 <div className='opacityBanner'></div>
                 {location.pathname === "/" ? (
                     <div className='textBanner'>
