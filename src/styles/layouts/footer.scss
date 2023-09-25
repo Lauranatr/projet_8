@@ -16,3 +16,17 @@
       color: #ffffff;
     }
   }
+
+  @media screen and (max-width: 425px) {
+    .footer {
+      max-width: 425px;
+      justify-content: center;
+      .footer-img {
+        width: 30%;
+      }
+      .footer-text {
+        padding: 10px 0px;
+        color: #ffffff;
+      }
+    }
+  }

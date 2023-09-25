@@ -1,0 +1,183 @@
+.accommodationContent {
+    margin: 0 auto;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+        .titleLocationHostStars {
+            display: flex;
+            justify-content: space-between;
+            color: #FF6060;
+            margin-bottom: 24px;
+        .titleLocation {
+            color: #FF6060;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-right: 20px;
+            row-gap: 20px;
+            h1 {
+                font-size: 36px;
+                font-weight: 500;
+            }
+            p {
+                font-size: 18px;
+            }
+            ul {
+                list-style-type: none;
+                display: flex;
+                column-gap: 10px;
+            }
+            li {
+                color:white;
+                min-width: 115px;
+                background-color: #FF6060;
+                text-align: center;
+                font-size: 14px;
+                border-radius: 9px;
+                line-height: 22px;
+                padding: 0 15px;
+            }
+        }
+        .hostStars {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            .host {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                max-width: 167px;
+                min-width: 180px;
+                font-size: 18px;
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .accommodationCollapse {
+        display: flex;
+        column-gap: 76px;
+        margin-bottom: 50px;
+        div {
+            width: 100%;
+        }
+        ul {
+            list-style-type: none;
+        }
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+    .accommodationContent {
+        max-width: 1024px;
+            .titleLocationHostStars {
+                flex-direction: column;
+                margin-bottom: 10px;
+                row-gap: 20px;
+            .titleLocation {
+                h1 {
+                    font-size: 25px;
+                }
+                p {
+                    padding-top: 10px;
+                    font-size: 15px;
+                }
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    row-gap: 5px;
+                }
+                li {
+                    font-size: 10px;
+                    min-width: 85px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+            }
+            .hostStars {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                .host {
+                    font-size: 12px;
+                    min-width: 0;
+                    img {
+                        width: 65px;
+                        height: 65px;
+                    }
+                }
+                .stars img {
+                    width: 30px;
+                }
+            }
+        }
+        .accommodationCollapse {
+            flex-direction: column;
+            row-gap: 0px;
+            max-height: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .accommodationContent {
+        max-width: 425px;
+        display: flex;
+        flex-direction: column;
+        width: 86%;
+            .titleLocationHostStars {
+                flex-direction: column;
+                margin-bottom: 10px;
+                row-gap: 20px;
+            .titleLocation {
+                h1 {
+                    font-size: 25px;
+                }
+                p {
+                    padding-top: 10px;
+                    font-size: 15px;
+                }
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    row-gap: 5px;
+                }
+                li {
+    
+                    font-size: 10px;
+                    min-width: 85px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+            }
+            .hostStars {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                .host {
+                    font-size: 12px;
+                    min-width: 0;
+                    img {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+
+                .stars img {
+                    width: 20px;
+                }
+            }
+        }
+        .accommodationCollapse {
+            flex-direction: column;
+            row-gap: 0px;
+            max-height: 250px;
+        }
+    }
+}

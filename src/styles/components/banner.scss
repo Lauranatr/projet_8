@@ -7,6 +7,9 @@
         img {
             position: absolute;
             border-radius: 25px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
 }
 
@@ -34,4 +37,46 @@
             font-size: 48px;
             font-weight: 500;
         }
+}
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {    
+    .homeBanner {
+        width: 86%;
+        max-width: 1024px;
+        height: 151px;
+            img {
+                height: 151px;
+                max-width: 1024px;
+            }
+    }
+    .textBanner {
+        display: flex;
+        padding: 25px 15px;
+            h1 {
+                font-size: 34px;
+            }
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .homeBanner {
+        margin: 30px;
+        width: 86%;
+        max-width: 425px;
+        border-radius: 10px;
+        height: 111px;
+            img {
+                border-radius: 20px;
+                height: 111px;
+                max-width: 425px;
+            }
+    }
+    .textBanner {
+        display: flex;
+        padding: 25px 15px;
+            h1 {
+                font-size: 24px;
+            }
+    }
 }
